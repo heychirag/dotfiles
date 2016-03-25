@@ -1,3 +1,9 @@
+# Path to your oh-my-zsh installation.
+export ZSH=$HOME/.oh-my-zsh
+
+# My GitHub User Id
+export github_user=heychirag
+
 # source profile like .bashrc
 if [ -f /etc/profile ]; then
 	source /etc/profile
@@ -7,7 +13,6 @@ fi
 export LC_ALL="en_US.UTF-8"
 
 # User specific aliases and functions go here (override system defaults)
-export EDITOR='emacs -nw'
 export GIT_EXTERNAL_DIFF=git-gui-diff
 
 setopt share_history
@@ -20,6 +25,7 @@ alias ls="ls --color"
 alias grep="grep --color"
 alias ..="cd .."
 alias zshrc="source ~/.zshrc; cd ~-"
+alias emacs=/Applications/Emacs.app/Contents/MacOS/Emacs
 
 # Path to your oh-my-zsh installation.
   export ZSH=$HOME/.oh-my-zsh
@@ -72,17 +78,17 @@ HYPHEN_INSENSITIVE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(command-not-found git git-extras history npm nyan pip pylint python sudo )
+plugins=(command-not-found git git-extras history npm nyan pip pylint python sudo zsh-autosuggestions zsh-completions)
 
 # User configuration
 
-export PATH="/home/whizzzkid/.nave/installed/default/bin:/home/whizzzkid/.dotfiles/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/etc/aws-eb-tools/eb/linux/python2.7:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
-export LANG="en_US.UTF-8"
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -95,7 +101,7 @@ export LANG="en_US.UTF-8"
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -106,11 +112,4 @@ export LANG="en_US.UTF-8"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-eval "$(echo "_orig_git_prompt_info() {"; declare -f git_prompt_info | tail -n +2)"
-git_prompt_info() {
-    if [[ "$(g4d_lib::print_current_client)" =~ ".+:(.+):.+:.+" ]]; then
-        echo "g4:(%{$fg[red]%}$match%{$reset_color%})"
-    else
-        _orig_git_prompt_info
-    fi
-}
+DEFAULT_USER='whoami'
