@@ -6,8 +6,7 @@ fi
 # Fonts are just painful.
 export LC_ALL="en_US.UTF-8"
 
-# User specific aliases and functions go here (override system defaults)
-export EDITOR='emacs -nw'
+# User specific aliases and functions go here (override system defaults)xs
 export GIT_EXTERNAL_DIFF=git-gui-diff
 
 setopt share_history
