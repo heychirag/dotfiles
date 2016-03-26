@@ -8,6 +8,7 @@ export LC_ALL="en_US.UTF-8"
 
 # User specific aliases and functions go here (override system defaults)xs
 export GIT_EXTERNAL_DIFF=git-gui-diff
+export DEFAULT_USER=`whoami`
 
 setopt share_history
 HISTSIZE=10000
@@ -21,7 +22,7 @@ alias ..="cd .."
 alias zshrc="source ~/.zshrc; cd ~-"
 
 # Path to your oh-my-zsh installation.
-  export ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -71,7 +72,7 @@ HYPHEN_INSENSITIVE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(command-not-found git git-extras history npm nyan pip pylint python sudo )
+plugins=(command-not-found git git-extras history npm nyan pip pylint python sudo zsh-autosuggestions)
 
 # User configuration
 
