@@ -20,6 +20,7 @@ alias ls="ls --color"
 alias grep="grep --color"
 alias ..="cd .."
 alias zshrc="source ~/.zshrc; cd ~-"
+alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
