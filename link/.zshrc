@@ -115,3 +115,7 @@ git_prompt_info() {
         _orig_git_prompt_info
     fi
 }
+
+# Fish like syntax highlighting for zsh
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
