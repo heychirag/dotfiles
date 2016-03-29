@@ -29,6 +29,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
+
 ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -73,7 +74,9 @@ HYPHEN_INSENSITIVE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(command-not-found git git-extras history npm nyan pip pylint python sudo zsh-autosuggestions)
+
+plugins=(command-not-found git git-extras history sudo zsh-autosuggestions)
+         #npm nyan pip pylint python 
 
 # User configuration
 
