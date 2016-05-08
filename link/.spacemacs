@@ -28,8 +28,7 @@ values."
                       auto-completion-enable-company-help-tooltip t)
      better-defaults
      c-c++
-     (colors :variables
-             colors-enable-nyan-cat-progress-bar t)
+     (colors :variables)
      eyebrowse
      emacs-lisp
      git
@@ -39,6 +38,7 @@ values."
      javascript
      markdown
      org
+     osx
      php
      python
      seq
